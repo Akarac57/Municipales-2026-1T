@@ -666,7 +666,7 @@ function pickCommune(i){
 function pauseSync(){
   _editing=true;
   clearTimeout(_editTimer);
-  _editTimer=setTimeout(()=>{ _editing=false; }, 3000); // reprend 3s après la dernière frappe
+  _editTimer=setTimeout(()=>{ _editing=false; }, 60000); // reprend 60s après la dernière frappe
 }
 function updRealTot(ci){
   pauseSync();
